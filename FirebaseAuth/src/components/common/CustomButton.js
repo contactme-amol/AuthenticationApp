@@ -9,14 +9,10 @@ class CustomButton extends Component {
 
     render() {
         return (
-            <TouchableOpacity onPress={() => this.onClickMeButton()} style = {styles.buttonStyle}>
-                <Text style={styles.textStyle}> Click Me!!</Text>
+            <TouchableOpacity onPress={() => this.props.onPress()} style = {styles.buttonStyle}>
+                <Text style={styles.textStyle}> {this.props.title} </Text>
             </TouchableOpacity>
         );
-    }
-
-    onClickMeButton() {
-        Linking.openURL(this.props.imageUrl)
     }
 
 }
