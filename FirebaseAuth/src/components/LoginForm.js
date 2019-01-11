@@ -26,7 +26,7 @@ state = {email: '', password: '', error: '', loading: false};
     }
 
     onLoginSuccess() {
-        alert("Login has been successfully done");
+        //alert("Login has been successfully done");
         this.setState({
             email: '',
             password: '',
