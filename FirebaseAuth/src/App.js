@@ -34,19 +34,19 @@ class App extends Component {
     renderContentOnLoggedInStatus() {
         switch (this.state.loggedIn) {
             case true:
-            return (
-                <View>
-<CustomButton 
-                onPress = {this.onClickLogOutButton.bind(this)}
-                title = { 'Logout' }  
-            />
-                </View>
-            
-            );
+                return (
+                    <View>
+                        <CustomButton
+                            onPress={this.onClickLogOutButton.bind(this)}
+                            title={'Logout'}
+                        />
+                    </View>
+
+                );
             case false:
-            return <LoginForm />;
+                return <LoginForm />;
             default:
-            return <Spinner size = {'large'} />;
+                return <Spinner size = {'large'} />;
 
         }
     } 
